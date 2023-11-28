@@ -15,6 +15,48 @@ header, footer, section {
 }
 header {
     background-image: url(../src/images/bg1.jpg);
+    background-attachment: fixed;
+}
+
+#startScreen {
+    position:fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../src/images/bg5.jpg);
+    background-position: center;
+    background-size: cover;
+    z-index: 4;
+    transition: opacity 1.2s ease-in-out;
+}
+#startButton {
+    background-color: black;
+    background-size: cover;
+    width: 220px;
+    height: 160px;
+    background-color: #00000000;
+    border: none;
+    font-family: Bayon;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    color: gray;
+    text-align: center;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+#startButton:hover {
+    cursor: pointer;
+    color:  white;
+    transform: translateY(-2px);
+    text-shadow: 0 0 6px black;
+}
+#startScreen.hide {
+    opacity: 0; 
 }
 
 h1 {
@@ -110,14 +152,17 @@ section p {
 
 #E1M1 {
     background-image: url(../src/images/bg2.jpg);
+    background-attachment: fixed;
 }
 
 #E1M2 {
     background-image: url(../src/images/bg3.jpg);
+    background-attachment: fixed;
 }
 
 #E1M3 {
     background-image: url(../src/images/bg4.jpg);
+    background-attachment: fixed;
 }
 
 footer {
@@ -125,6 +170,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     background-image: url(../src/images/bg5.jpg);
+    background-attachment: fixed;
 }
 footer p {
     text-align: center;
